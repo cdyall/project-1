@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+  <!-- google fonts "poppins" -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+  <!-- My CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!--uncompressed JQuery-->
+  <script src="https://code.jquery.com/jquery-3.4.0.js" integrity="sha256-DYZMCC8HTC+QDr5QNaIcfR7VSPtcISykd+6eSmBW5qo="
+    crossorigin="anonymous"></script>
+
+  <!--JavaScript-->
+  <script src="assets/Javascript/books.js"></script>
+  <script src="assets/Javascript/date_api.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+</head>
+
+<!-- Project Name! -->
+<header>
+  <div>
+    <div class="col s1"></div>
+    <div class="col s10 z-depth-4 header" id="header">
+      <p class="headerText"><b>Book 'Em</b></p>
+    </div>
+  </div>
+</header>
+
+
+<!-- Form! -->
+<body class="row wrapper">
+  <div class="col s12">
+    <div class="container">
+      <div class="row">
+
+
+
+        <div class="input-field col s4">
+          <input id="search" type="text" class="validate">
+          <label for="Search">Favorite Topic/Interest</label>
+        </div>
+
+        <!-- number dropdown selector  -->
+        <div class="input-field col s4">
+          <select id="numBooks">
+            <option value="1">1</option>
+            <option value="5" selected>5</option>
+            <option value="10">10</option>
+          </select>
+          <label>How Many Books?</label>
+        </div>
+
+        <!-- email w/validation -->
+        <div class="input-field col s4">
+          <input id="email" type="email" class="validate">
+          <label for="email">Your Email</label>
+        </div>
+
+      </div>
+      <!-- Step 2 -->
+      <div class="row">
+        <div class="input-field col s6">
+          <select class="holidays">
+            <optgroup label="Holiday"></optgroup>
+            <option value=""></option>
+            <option value="Valentine's Day">Valentine's Day</option>
+            <option value="Mother's Day">Mother's Day</option>
+            <option value="Father's Day">Father's Day</option>
+            <option value="Christmas Day">Christmas Day</option>
+            <option value="Chanukah/Hanukkah (first day)">Hanukkah</option>
+            </optgroup>
+            <optgroup label="Custom Date">
+              <option value="other" id="other_event">Enter a birthday or anniversary</option>
+            </optgroup>
+          </select>
+          <label>Holiday or Custom Date</label>
+        </div>
+
+        <!-- Custom date range -->
+        <div class="input-field col s5" id="customDateForm">
+          <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Enter your custom date</label>
+              <input type="date" class="form-control" id="userProvidedDate" aria-describedby="emailHelp"
+                placeholder="2019-06-01">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- Empty div to show days reminaing -->
+    <div id="daysRemaining"></div>
+
+     <!-- Submit Botton -->
+     <div class="col s12"></div>
+     <button class="btn waves-effect waves-light" type="submit" id="search-button" name="action">Submit
+       <i class="material-icons right"></i>
+     </button>
+
+    <!-- Book Selections -->
+    <div class="container">
+    <div class="row">
+    <div class="col s1"></div>
+    <div>
+      <div class="col s10">
+        <p class="z-depth-4">Book Selections</p>
+      </div>
+      <div class="col s1"></div>
+    </div>
+      <br>
+      <div class="col s12" id="mediaSection">
+
+      </div>
+    </div>
+  </div>
+</body>

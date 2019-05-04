@@ -1,0 +1,44 @@
+.wrapper {
+    margin: 0 auto;
+}
+
+body {
+    background-color: #117864;
+    color: white;
+    background-image: url("../images/leftSideBookBorder.png");
+    background-repeat: repeat-y;
+    background-size: 350px 800px;
+}
+
+.col {
+    text-align: center;
+}
+
+.h3 {
+    text-align: center;
+}
+
+.header {
+    text-align: center;
+    font-size: 24px;
+    font-family: 'Poppins', sans-serif;
+    vertical-align: middle;
+   margin-top: 12px;
+
+}
+
+.headerText {
+    margin: 5px;
+    font-style: italic;
+}
+
+.bookS {
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+
+}
+
+.btn {
+    margin-top: 10px;
+}
